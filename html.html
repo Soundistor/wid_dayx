@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>JS</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+
+function img_view()
+	{
+	document.getElementById("im1").src = "img/gif_1.gif";
+	var i = document.getElementById("but_dayx");
+	i.parentNode.removeChild(i);
+	}
+</script>
+
+<form name = "dayx_form">
+<input type = "button" id = "but_dayx" onClick = "img_view(this.form);" style="width:120px; height:50px; background-color: rgb(0,255,0);" value = "Show" />
+<input type = "image" name = "img_1" id = "im1" src = "img/null1.jpg" alt = "Push me" />
+</form>
+
+
+</div>
+</body>
+</html>
